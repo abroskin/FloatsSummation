@@ -13,8 +13,6 @@ T sum(std::vector<T>& v)
 {
     if (v.empty()) {
         return static_cast<T>(0.0);
-    } else if (v.size() == 1u) {
-        return v.front();
     }
 
     std::make_heap(v.begin(),v.end(), comp<T>);
